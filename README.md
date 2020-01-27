@@ -111,7 +111,7 @@ other controllers)
 
 # BUGS
 
-See issues on GitHub: <https://github.com/ktkdd/hpsahba/issues>.
+See issues on GitHub: <https://github.com/ktkd/hpsahba/issues>.
 
 # AUTHOR
 
