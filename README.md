@@ -88,8 +88,7 @@ at your own risk.
 `dkms build -m hpsa-dkms -v 5.4.15`
 `dkms install -m hpsa-dkms -v 5.4.15`
 
-В случае необходимости пакет можно удалить из дерева командой:
-sudo dkms remove -m can-dkms/4.1.6-200 --all
+4) remove dkms module: `dkms remove -m hpsa-dkms/5.4.15 --all`
 
 
 ## Supported hardware
