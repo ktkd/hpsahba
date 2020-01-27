@@ -79,13 +79,14 @@ at your own risk.
 ## DKMS kernel 5.4.15 module:
 
 1) copy dkms dir to /usr/src
+`cp kernel/hpsa-dkms-5.4.15 /usr/src/hpsa-dkms-5.4.15/ -rvf`
 
 2) add dkms module:
-dkms add -m hpsa-dkms -v 5.4.15
+`dkms add -m hpsa-dkms -v 5.4.15`
 
 3) build&install kernel module:
-dkms build -m hpsa-dkms -v 5.4.15
-dkms install -m hpsa-dkms -v 5.4.15
+`dkms build -m hpsa-dkms -v 5.4.15`
+`dkms install -m hpsa-dkms -v 5.4.15`
 
 В случае необходимости пакет можно удалить из дерева командой:
 sudo dkms remove -m can-dkms/4.1.6-200 --all
