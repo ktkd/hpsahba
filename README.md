@@ -76,6 +76,20 @@ Patchset changelog:
 This will never be upstreamed and officially supported (for P410), see
 the email from Don Brace: <https://lkml.org/lkml/2018/12/17/618>. So use
 at your own risk.
+## DKMS kernel 5.4.15 module:
+
+1) copy dkms dir to /usr/src
+
+2) add dkms module:
+dkms add -m hpsa-dkms -v 5.4.15
+
+3) build&install kernel module:
+dkms build -m hpsa-dkms -v 5.4.15
+dkms install -m hpsa-dkms -v 5.4.15
+
+В случае необходимости пакет можно удалить из дерева командой:
+sudo dkms remove -m can-dkms/4.1.6-200 --all
+
 
 ## Supported hardware
 
@@ -97,8 +111,8 @@ other controllers)
 
 # BUGS
 
-See issues on GitHub: <https://github.com/im-0/hpsahba/issues>.
+See issues on GitHub: <https://github.com/ktkdd/hpsahba/issues>.
 
 # AUTHOR
 
-**hpsahba** was written by Ivan Mironov \<mironov.ivan@gmail.com>
+**hpsahba** originally written by Ivan Mironov \<mironov.ivan@gmail.com>
